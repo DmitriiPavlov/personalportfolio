@@ -102,14 +102,20 @@ img {
   object-fit: contain; /* Ensure the image fits within the specified dimensions */
 }
 
-.projcontainer {
-  max-width: 120%; /* Prevent text from exceeding container width */
+.projcontainer {/* Prevent text from exceeding container width */
   font-size: 0.95em; /* Set a base font size (adjust as needed) */
   margin-top: 1em; /* Space between image and text */
   line-height: 1.5; /* Improve readability */
-  color: inherit; /* Inherit text color from parent */
+  color: inherit; 
+  /* Inherit text color from parent */
+  
 }
 
+.projcontainer a p {
+  padding:10px;
+  margin:5px;
+  
+}
 .social-icons {
   position: fixed;
   top: 20px;
