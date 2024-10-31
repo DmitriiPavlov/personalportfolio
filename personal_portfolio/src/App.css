@@ -1,0 +1,130 @@
+#root {
+  margin: 0;
+  padding:0;
+  text-align: center;
+}
+
+
+
+
+.slide{
+  height:100vh;
+  width:100vw;
+  padding:0px;
+  margin:0px;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  
+}
+.slide p{
+  font-size:1.8em;
+  line-height: 1.1;
+
+}
+
+#first_slide{
+  background: linear-gradient(#363946, #696773);
+}
+
+
+#second_slide{
+  gap:1.6em;
+  height:60vh;
+  background: linear-gradient(#696773, #819595);
+}
+
+#third_slide{
+  background: linear-gradient(#819595,#B1B6A6);
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: transform 0.2s linear; /* Smooth transition */
+}
+
+.icon-button:hover {
+  transform: scale(1.2); /* Adjust scale factor as needed */
+}
+
+.projcontainer{
+  display:flex;
+  flex-direction:row;
+  font-size:0.6em;
+}
+
+img {
+  width: 60vw;           /* Set the width to 60% of the viewport width */
+  max-height: 80vh;     /* Set the maximum height to 80% of the viewport height */
+  height: auto;          /* Maintain aspect ratio by setting height to auto */
+  object-fit: contain;   /* Ensure the entire image is visible and maintains its aspect ratio */
+}
+
+/* App.css */
+a {
+  all: unset; /* Remove all styles */
+  display: inline; /* Optional: Set display to inline if you want inline behavior */
+  cursor: pointer; /* Optional: Change cursor to pointer on hover */
+}
+
+/* Optional: Add specific styles for hover, active, and focus states */
+a:hover,
+a:active,
+a:focus {
+  /* Add any styles you want when the link is hovered, clicked, or focused */
+  text-decoration: none; /* Remove underline on hover */
+  color: inherit; /* Use the inherited text color */
+}
+
+a:hover{
+  transform: scale(1.04);
+}
+
+
+.projcontainer {
+  text-align: center; /* Center text under the image */
+  width: 60vw; /* Match the image width */
+  max-height: 80vh; /* Same max height as the image */
+  margin: auto; /* Center the container in its parent */
+  gap:10px;
+}
+
+img {
+  width: 100%; /* Make the image take up the full width of the container */
+  max-height: 80vh; /* Limit max height */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits within the specified dimensions */
+}
+
+.projcontainer {
+  max-width: 120%; /* Prevent text from exceeding container width */
+  font-size: 0.95em; /* Set a base font size (adjust as needed) */
+  margin-top: 1em; /* Space between image and text */
+  line-height: 1.5; /* Improve readability */
+  color: inherit; /* Inherit text color from parent */
+}
+
+.social-icons {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  color:white;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s;
+  filter: invert(100%); 
+}
+.icon:hover {
+    transform: scale(1.1);
+}
